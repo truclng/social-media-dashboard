@@ -1,0 +1,35 @@
+{
+  "name": "simple-website",
+  "version": "1.0.0",
+  "description": "## Functional Requirements - Light/Dark Mode toggle (takes system pref by default, but can override with toggle) - Display social media analytics/statistics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/truclng/simple-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/truclng/simple-website/issues"
+  },
+  "homepage": "https://github.com/truclng/simple-website#readme",
+  "dependencies": {
+    "@babel/core": "^7.22.11",
+    "@babel/preset-env": "^7.22.10",
+    "autoprefixer": "^10.4.15",
+    "browser-sync": "^2.29.3",
+    "cssnano": "^6.0.1",
+    "dart-sass": "^1.25.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "postcss": "^8.4.28",
+    "sass": "^1.66.1"
+  }
+}

@@ -1,5 +1,119 @@
 @use '../util' as *;
 
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: rem(30);
+
+    @include breakpoint(medium) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint(large) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
 .card {
-    padding: rem(20);
+    background: var(--dark-card-bg);
+    color: var(--dark-text1);
+    flex: 1;
+    text-align: center;
+    padding: rem(25);
+    border-radius: rem(5);
+    position: relative;
+    overflow: hidden;
+
+    &--facebook {
+        border-top: rem(5) solid var(--facebook);
+    }
+
+    &--twitter {
+        border-top: rem(5) solid var(--twitter);
+    }
+
+    &--instagram {
+        padding-top: rem(30);
+
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: rem(5);
+            background: linear-gradient(
+                225deg,
+                var(--instagram-end),
+                var(--instagram-middle) 50.91%,
+                var(--instagram-start) 100%
+            );
+        }
+    }
+
+    &--youtube {
+        border-top: rem(5) solid var(--youtube);
+    }
+
+    &__platform {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: rem(28);
+    }
+
+    &__icon {
+        margin-right: rem(8);
+    }
+
+    &__username {
+        font-size: rem(12);
+        font-weight: bold;
+    }
+
+    &__count {
+        color: var(--dark-text2);
+        font-weight: bold;
+        line-height: 1;
+        margin-bottom: rem(25);
+
+        &--big {
+            font-size: rem(56);
+        }
+
+        &--small {
+            font-size: rem(32);
+        }
+    }
+
+    &__label {
+        font-size: rem(12);
+        color: var(--dark-text1);
+        font-weight: normal;
+        text-transform: uppercase;
+        margin-top: rem(8);
+        letter-spacing: rem(5);
+    }
+
+    &__change {
+        font-size: rem(12);
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &--up {
+            color: var(--limegreen);
+        }
+
+        &--down {
+            color: var(--brightred);
+        }
+    }
+
+    &__numchange {
+        margin-left: rem(4);
+    }
+
 }

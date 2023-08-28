@@ -1,0 +1,24 @@
+@use '../util' as *;
+
+.change-title {
+    margin-bottom: rem(20);
+}
+
+.change-grid {
+    font-weight: bold;
+
+    &__platform {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: rem(30);
+    }
+
+    &__statistics {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        color: var(--dark-text2);
+    }
+
+}

@@ -22,4 +22,51 @@
     --light-card-bg: hsl(227, 47%, 96%);
     --light-text1: hsl(228, 12%, 44%);
     --light-text2: hsl(230, 17%, 14%);
+    --background: var(--light-bg);
+    --text-color: var(--light-text2);
+    --text-color2: var(--light-text1);
+    --card-bg: var(--light-card-bg);
+    --toggle: var(--toggle-light);
+    --toggle-bg: var(--toggle-bg-light);
+    --toggle-button: var(--toggle-button-light);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: var(--dark-bg);
+        --text-color: var(--dark-text2);
+        --text-color2: var(--dark-text1);
+        --card-bg: var(--dark-card-bg);
+        --toggle: var(--light-bg);
+        --toggle-bg: linear-gradient(
+            225deg,
+            var(--toggle-bg-end) 0%,
+            var(--toggle-bg-start) 98.02%
+        );
+        --toggle-button: var(--dark-bg);
+    }
+}
+
+body.light {
+    --background: var(--light-bg);
+    --text-color: var(--light-text2);
+    --text-color2: var(--light-text1);
+    --card-bg: var(--light-card-bg);
+    --toggle: var(--toggle-light);
+    --toggle-bg: var(--toggle-bg-light);
+    --toggle-button: var(--toggle-button-light);
+}
+
+body.dark {
+    --background: var(--dark-bg);
+    --text-color: var(--dark-text2);
+    --text-color2: var(--dark-text1);
+    --card-bg: var(--dark-card-bg);
+    --toggle: var(--light-bg);
+    --toggle-bg: linear-gradient(
+        225deg,
+        var(--toggle-bg-end) 0%,
+        var(--toggle-bg-start) 98.02%
+    );
+    --toggle-button: var(--dark-bg);
 }

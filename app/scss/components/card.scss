@@ -15,8 +15,8 @@
 }
 
 .card {
-    background: var(--dark-card-bg);
-    color: var(--dark-text1);
+    background: var(--card-bg);
+    color: var(--text-color2);
     flex: 1;
     text-align: center;
     padding: rem(25);
@@ -73,7 +73,7 @@
     }
 
     &__count {
-        color: var(--dark-text2);
+        color: var(--text-color);
         font-weight: bold;
         line-height: 1;
         margin-bottom: rem(25);
@@ -84,12 +84,13 @@
 
         &--small {
             font-size: rem(32);
+            margin-bottom: 0;
         }
     }
 
     &__label {
         font-size: rem(12);
-        color: var(--dark-text1);
+        color: var(--text-color2);
         font-weight: normal;
         text-transform: uppercase;
         margin-top: rem(8);

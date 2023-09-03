@@ -1,4 +1,4 @@
-# simple-website
+# social-media-dashboard
 This is a social media dashboard which displays analytics from user accounts. The data is pre-provided and cannot be modified (unless modified directly on index.html file). Users can switch between light and dark mode using the dark mode toggle.
 
 This practice project follows [freeCodeCamp's lesson](https://youtu.be/krfUjg0S2uI?si=67-RdlpKodpGfTq_).
